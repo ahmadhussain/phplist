@@ -9,20 +9,20 @@ Api for phplist to subscribe to phplist.
 ## Requirements
 
     1 - :domain => 'mailer.example.com' # Your Phplist domain url
-    2 - :action => 'LCSub.php' # Your action php file
-    3 - :password => 'xxxxxx' # Your phplist password which you have mentioned in LCSub.php
+    2 - :action => 'LCsub.php' # Your action php file
+    3 - :password => 'xxxxxx' # Your phplist password which you have mentioned in LCsub.php
     4 - :ssl_enabled => false # Is ssl_enabled or not 
-
+    5 - Setup LCsub.php in your phplist project. (Download LCsub.php webservice from here.[LCsub.php](https://github.com/ahmadhussain/phplist_webservice))
 ## Usage
 
 You can use this by creating an instance:
 
-    phplist = Phplist::API.new({:domain => 'mailer.example.com', :action => 'LCSub.php', :password => 'xxxxxx', :ssl_enabled => false})
+    phplist = Phplist::API.new({:domain => 'mailer.example.com', :action => 'LCsub.php', :password => 'xxxxxx', :ssl_enabled => false})
     
 You could set the values in an initializer file in your app (e.g. your_app_path/config/initializers/phplist.rb).
 
     Phplist::API.domain = 'mailer.example.com'
-    Phplist::API.action = 'LCSub.php'
+    Phplist::API.action = 'LCsub.php'
     Phplist::API.password = 'xxxxxx'
     Phplist::API.ssl_enabled = false
     
