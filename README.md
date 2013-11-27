@@ -11,8 +11,9 @@ Api for phplist to subscribe to phplist.
     1 - :domain => 'mailer.example.com' # Your Phplist domain url
     2 - :action => 'LCsub.php' # Your action php file
     3 - :password => 'xxxxxx' # Your phplist password which you have mentioned in LCsub.php
-    4 - :ssl_enabled => false # Is ssl_enabled or not 
-    5 - Setup LCsub.php in your phplist project. (Download LCsub.php webservice from here.[LCsub.php](https://github.com/ahmadhussain/phplist_webservice))
+    4 - :ssl_enabled => false # Is ssl_enabled or not
+
+Setup LCsub.php in your phplist project. (Download LCsub.php webservice from here.[LCsub.php](https://github.com/ahmadhussain/phplist_webservice))
 ## Usage
 
 You can use this by creating an instance:
