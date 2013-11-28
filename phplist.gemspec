@@ -2,11 +2,11 @@
 
 Gem::Specification.new do |s|
   s.name = "phplist"
-  s.version = "0.1.0"
+  s.version = "0.1.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 1.2") if s.respond_to? :required_rubygems_version=
   s.authors = ["Ahmad Hussain"]
-  s.date = "2013-11-27"
+  s.date = "2013-11-28"
   s.description = "Phplist subscriber"
   s.email = "ahmadhmugl@gmail.com"
   s.extra_rdoc_files = ["CHANGELOG", "README.md", "README.rdoc", "lib/phplist.rb"]
