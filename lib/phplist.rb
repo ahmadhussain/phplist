@@ -23,7 +23,7 @@ module Phplist
       p_country = CGI::escape(info[:subscriber][:country]||'')
 
       start_time = Time.now
-      url = "http#{'s' if @ssl_enabled}://#{@domain}/#{@action}?password=#{@password}&email=#{p_email.downcase}&name=#{p_name}&city=#{p_city}&country=#{p_country}&makeconfirmed=1&lid=#{info[:id]}"
+      url = "http#{'s' if @ssl_enabled}://#{@domain}/#{@action}?passwd=#{@password}&email=#{p_email.downcase}&name=#{p_name}&city=#{p_city}&country=#{p_country}&makeconfirmed=1&lid=#{info[:id]}"
       url = URI.encode(url)
       uri = URI(url)
       res = Net::HTTP.get_response(uri)
