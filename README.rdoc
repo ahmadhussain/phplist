@@ -1,4 +1,4 @@
-# phplist
+# phplist [![Gem Version](https://badge.fury.io/rb/phplist.png)](http://badge.fury.io/rb/phplist)
 
 Api for phplist to subscribe to phplist.
 
