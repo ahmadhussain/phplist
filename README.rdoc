@@ -1,19 +1,20 @@
-# phplist {<img src="https://badge.fury.io/rb/phplist.png" alt="Gem Version" />}[http://badge.fury.io/rb/phplist]
+phplist 
+{<img src="https://badge.fury.io/rb/phplist.png" alt="Gem Version" />}[http://badge.fury.io/rb/phplist]
 
 Api for phplist to subscribe to phplist.
 
-## Installation
+Installation
 
     $ gem install phplist
     
-## Requirements
+Requirements
 
     1 - :domain => 'mailer.example.com' # Your Phplist domain url
     2 - :action => 'LCsub.php' # Your action php file
     3 - :password => 'xxxxxx' # Your phplist password which you have mentioned in LCsub.php
     4 - :ssl_enabled => false # Is ssl_enabled or not 
     5 - Setup LCsub.php in your phplist project. (Download LCsub.php webservice from here.[LCsub.php](https://github.com/ahmadhussain/phplist_webservice))
-## Usage
+Usage
 
 You can use this by creating an instance:
 
@@ -30,16 +31,16 @@ If you have added in initializer then you don't need to pass this as function pa
  
     phplist = Phplist::API.new
     
-### Subscribe User to a list:
+Subscribe User to a list:
  
     phplist.subscribe({:id => list_id, :subscriber => {:email => 'name@email.com'}})
     
     
-### Subscribe a batch of users:
+Subscribe a batch of users:
 
     phplist.subscribe_list({:id => list_id, :subscribers => [{:email => 'name1@email.com'}, {:email => 'name2@email.com'}]})
     
-### Subscribe multiple details:
+Subscribe multiple details:
 
 You can also subscribe multiple details like name, city, country:
 
